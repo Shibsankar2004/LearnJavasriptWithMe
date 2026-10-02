@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Basic</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    <h1>Amazing image</h1>
+    <div>
+       <ul id="image">
+        <li><img width="200px" id="bird" src="https://images.pexels.com/photos/1144279/pexels-photo-1144279.jpeg" alt="Bird"></li>
+        <li><img width="200px" id="museum" src="https://images.pexels.com/photos/1144281/pexels-photo-1144281.jpeg" alt="Museum"></li>
+        <li><img width="200px" id="vietnam" src="https://images.pexels.com/photos/1739841/pexels-photo-1739841.jpeg" alt="Vietnam"></li>
+        <li><img width="200px" id="smiling" src="https://images.pexels.com/photos/1739842/pexels-photo-1739842.jpeg" alt="Smiling Girl"></li>
+        <li><img width="200px" id="selfie" src="https://images.pexels.com/photos/1739844/pexels-photo-1739844.jpeg" alt="Selfie" onclick="alert('selfie')"></li>
+       <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+    </ul>
+    </div>
+</body>
+<script>
+    //  document.getElementById('bird').onclick=function(){
+    //     alert("bird clicked")
+    //  }
+ 
+    //attachEvent()
+    //jQuery-on
+    //type,timeStamp,dafaultPrevented
+    // target,toElement,srcElement,currentTarget
+    //clientX,clientY,screenX,screenY
+    //altKey,cttrlkey,shiftkey,keyCode
+
+    // document.getElementById('bird').addEventListener('click',function(){
+    //     alert("bird clicked again")
+    // })
+//     document.getElementById('bird').addEventListener('click', function(e) {
+//     console.log(e);
+// },false);
+
+// document.getElementById('image').addEventListener('click', function(e) {
+//     console.log("clicked inside the ul");
+// },false);
+
+
+// document.getElementById('bird').addEventListener('click', function(e) {
+//     console.log("bird clicked");
+// },false);
+
+// document.getElementById('image').addEventListener('click', function(e) {
+//     console.log("clicked inside the ul");
+// },true);
+
+// document.getElementById('bird').addEventListener('click', function(e) {
+//     console.log("bird clicked");
+// },true);
+
+
+// document.getElementById('bird').addEventListener('click', function(e) {
+//     console.log("bird clicked");
+//     e.stopPropagation()
+// },false);
+
+// document.getElementById('google').addEventListener('click', function(e){
+//     e.preventDefault();
+//      e.stopPropagation();
+//     console.log("google clicked");    
+// },false)
+//
+
+//basic are closes and advance are strating
+document.querySelector('#image').addEventListener('click', function(e){
+    // console.log(e);
+    console.log(e.target.tagName);
+    if(e.target.tagName==='IMG'){
+        console.log(e.target.id);
+       // console.log(e.target.parentNode);
+    let removeIt= e.target.parentNode
+    removeIt.remove()
+        
+    }
+    
+    //removeIt.parentNode.removeChild(removeIt)
+} )
+</script>
+</html>
