@@ -68,7 +68,19 @@ A complete JavaScript learning repository containing notes, exercises, coding ch
 
 
 
-JavaScript/ │ ├── Basics/ ├── Functions/ ├── Arrays/ ├── Objects/ ├── DOM/ ├── Events/ ├── Async/ ├── OOP/ └── Projects/
+JavaScript/ │ 
+01_basic
+02_basic
+03_basics
+04_Control
+05_iterations
+06_Dom
+07_Project
+08_events
+09_advance_one
+10_classes_add_oop
+11_fun_with_js
+js_fun
 
 
 ## Mini Projects
