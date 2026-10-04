@@ -94,9 +94,8 @@ Through this repository, I practiced problem-solving, DOM manipulation, event ha
 
 **Shibsankar**
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/Shibsankar2004
 
-Option 3: Recruiter-Friendly README
 # JavaScript Projects Portfolio 🚀
 
 This repository showcases my JavaScript learning journey and practical projects built while mastering front-end development.
